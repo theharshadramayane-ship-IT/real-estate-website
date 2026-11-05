@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lags - Real Estate</title>
+    <title>Lags - Real Estate India</title>
     <style>
         * {
             margin: 0;
@@ -42,8 +42,9 @@
         }
         .btn-primary { background: #0056b3; color: #fff; }
         .btn-outline { border: 2px solid #0056b3; color: #0056b3; background: transparent; }
+        
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             height: 500px;
@@ -56,6 +57,7 @@
         }
         .hero h1 { font-size: 48px; margin-bottom: 10px; }
         .hero p { font-size: 18px; margin-bottom: 30px; }
+        
         .search-container {
             background: white;
             padding: 20px;
@@ -73,6 +75,7 @@
             border-radius: 5px;
             outline: none;
         }
+
         .section-title {
             text-align: center;
             margin: 50px 0 30px;
@@ -102,6 +105,7 @@
         .card-content p { color: #777; font-size: 14px; margin-bottom: 15px; }
         .card-details { display: flex; justify-content: space-between; border-top: 1px solid #eee; padding-top: 15px; font-size: 14px; color: #555;}
         .card-details span { display: flex; align-items: center; gap: 5px; }
+        
         footer {
             background: #1a1a1a;
             color: #ccc;
@@ -113,7 +117,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Lags</div>
+        <div class="logo">Lags India</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="#">Properties</a>
@@ -122,57 +126,86 @@
         </nav>
         <button class="btn btn-primary">Sign In</button>
     </header>
+    
     <section class="hero">
         <h1>Find Your Dream Home</h1>
-        <p>Explore our wide range of properties and find the perfect place for you.</p>
+        <p>Explore our wide range of properties across India and find the perfect place for you.</p>
         <div class="search-container">
-            <input type="text" placeholder="Enter Location">
+            <input type="text" placeholder="Enter City (e.g., Mumbai, Delhi)">
             <select>
                 <option>Property Type</option>
-                <option>House</option>
-                <option>Apartment</option>
+                <option>Flat</option>
                 <option>Villa</option>
+                <option>Independent House</option>
+                <option>Plot</option>
             </select>
             <select>
                 <option>Price Range</option>
-                <option>$10k - $50k</option>
-                <option>$50k - $100k</option>
+                <option>₹10 Lakhs - ₹50 Lakhs</option>
+                <option>₹50 Lakhs - ₹1 Crore</option>
+                <option>₹1 Crore - ₹5 Crore</option>
             </select>
             <button class="btn btn-primary" onclick="alert('Searching properties...')">Search</button>
         </div>
     </section>
+
     <h2 class="section-title">Explore Our Properties</h2>
     <div class="property-grid" id="propertyList">
     </div>
+
     <footer>
-        <h2>Lags</h2>
-        <p style="margin-top: 10px;">&copy; 2026 Lags Real Estate. All rights reserved.</p>
+        <h2>Lags India</h2>
+        <p style="margin-top: 10px;">&copy; 2026 Lags Real Estate India. All rights reserved.</p>
     </footer>
+
     <script>
         const properties = [
             {
                 id: 1,
-                title: "Luxury Villa in California",
-                price: "$85,000",
-                img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80",
-                beds: 5, baths: 4, sqft: "3500"
+                title: "Luxury Villa in Juhu, Mumbai",
+                price: "₹ 8,50,00,000",
+                img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
+                beds: 5, baths: 5, sqft: "4500"
             },
             {
                 id: 2,
-                title: "Modern Apartment in New York",
-                price: "$45,000",
+                title: "Modern 3BHK Flat in Gurgaon",
+                price: "₹ 1,25,00,000",
                 img: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80",
-                beds: 2, baths: 2, sqft: "1200"
+                beds: 3, baths: 3, sqft: "1800"
             },
             {
                 id: 3,
-                title: "Family House in Texas",
-                price: "$60,000",
+                title: "Independent House in Bangalore",
+                price: "₹ 2,10,00,000",
                 img: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80",
-                beds: 4, baths: 3, sqft: "2500"
+                beds: 4, baths: 3, sqft: "2800"
+            },
+            {
+                id: 4,
+                title: "Sea Facing Apartment in Goa",
+                price: "₹ 4,75,00,000",
+                img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
+                beds: 3, baths: 2, sqft: "2100"
+            },
+            {
+                id: 5,
+                title: "Penthouse in Hyderabad",
+                price: "₹ 6,00,00,000",
+                img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80",
+                beds: 4, baths: 4, sqft: "3200"
+            },
+            {
+                id: 6,
+                title: "Rustic Farmhouse in Pune",
+                price: "₹ 3,20,00,000",
+                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+                beds: 4, baths: 3, sqft: "3000"
             }
         ];
+
         const container = document.getElementById('propertyList');
+        
         properties.forEach(prop => {
             const card = document.createElement('div');
             card.className = 'property-card';

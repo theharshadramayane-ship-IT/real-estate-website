@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Details - Lags</title>
+    <title>Property Details - Lags India</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { background-color: #f4f4f4; color: #333; }
@@ -13,27 +13,33 @@
         }
         .logo { font-size: 24px; font-weight: bold; color: #0056b3; }
         nav a { text-decoration: none; color: #555; margin: 0 15px; font-weight: 500; }
+        
         .container {
             display: flex; gap: 30px; padding: 40px 50px; max-width: 1300px; margin: 0 auto;
         }
         .main-content { flex: 2; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
         .sidebar { flex: 1; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: fit-content;}
+
         .main-image { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
         .property-title { font-size: 28px; margin-bottom: 10px; }
         .location { color: #777; margin-bottom: 20px; }
         .price { font-size: 32px; color: #0056b3; font-weight: bold; margin-bottom: 20px; }
+        
         .specs-grid {
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 20px;
         }
         .spec-item { text-align: center; }
         .spec-item strong { display: block; font-size: 18px; margin-bottom: 5px; }
         .spec-item span { color: #777; font-size: 14px; }
+
         .description h3 { margin-bottom: 10px; }
         .description p { line-height: 1.6; color: #555; margin-bottom: 20px; }
+
         .agent-profile { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
         .agent-profile img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
         .agent-info h4 { margin-bottom: 5px; }
         .agent-info p { color: #777; font-size: 14px; }
+        
         .contact-form input, .contact-form textarea {
             width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; outline: none;
         }
@@ -45,56 +51,64 @@
 </head>
 <body>
     <header>
-        <div class="logo">Lags</div>
+        <div class="logo">Lags India</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="index.html">Properties</a>
         </nav>
         <a href="index.html" style="text-decoration: none; color: #0056b3; font-weight: bold;">Back to Home</a>
     </header>
+
     <div class="container">
         <div class="main-content">
-            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Property" class="main-image">
-            <h1 class="property-title">Luxury Villa in California</h1>
-            <p class="location">📍 1234 Palm Street, Beverly Hills, CA</p>
-            <div class="price">$85,000</div>
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Property" class="main-image">
+            <h1 class="property-title">Luxury Villa in Juhu, Mumbai</h1>
+            <p class="location">📍 Juhu Beach Road, Mumbai, Maharashtra 400049</p>
+            <div class="price">₹ 8,50,00,000</div>
+
             <div class="specs-grid">
                 <div class="spec-item"><strong>5</strong><span>Bedrooms</span></div>
-                <div class="spec-item"><strong>4</strong><span>Bathrooms</span></div>
-                <div class="spec-item"><strong>3500</strong><span>Sq Ft</span></div>
-                <div class="spec-item"><strong>2026</strong><span>Year Built</span></div>
+                <div class="spec-item"><strong>5</strong><span>Bathrooms</span></div>
+                <div class="spec-item"><strong>4500</strong><span>Sq Ft</span></div>
+                <div class="spec-item"><strong>2022</strong><span>Year Built</span></div>
             </div>
+
             <div class="description">
                 <h3>Description</h3>
-                <p>Experience luxury living in this stunning modern villa. Featuring an open floor plan, floor-to-ceiling windows, a private infinity pool, and state-of-the-art smart home technology. Perfectly located near top-rated schools and shopping centers.</p>
+                <p>Experience luxury living in this stunning modern villa located in Mumbai. It features an open floor plan, large windows, a private swimming pool, and modern smart home technology. The property is close to top schools, hospitals, and the famous Juhu beach.</p>
+                
                 <h3 style="margin-top: 20px;">Features</h3>
                 <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
                     <li>Swimming Pool</li>
                     <li>Smart Home System</li>
-                    <li>2 Car Garage</li>
-                    <li>Central Air Conditioning</li>
-                    <li>Security System</li>
+                    <li>2 Car Parking</li>
+                    <li>24/7 Security</li>
+                    <li>Power Backup</li>
+                    <li>Modular Kitchen</li>
                 </ul>
             </div>
         </div>
+
         <div class="sidebar">
             <h3 style="margin-bottom: 20px;">Contact Agent</h3>
             <div class="agent-profile">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Agent">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Agent">
                 <div class="agent-info">
-                    <h4>Sarah Jenkins</h4>
-                    <p>Senior Real Estate Agent</p>
+                    <h4>Rahul Sharma</h4>
+                    <p>Senior Property Consultant</p>
                 </div>
             </div>
+            
             <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Phone Number" required>
+                <input type="tel" placeholder="Mobile Number" required>
                 <textarea rows="4" placeholder="I'm interested in this property..." required></textarea>
                 <button type="submit" class="btn-submit">Send Message</button>
             </form>
         </div>
     </div>
+
     <script>
         console.log("Property details page loaded.");
     </script>
